@@ -15,7 +15,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function ProductPage(props: { params: Promise<{ id: string }> }) {
+export default async function ProductPage(props: {
+  params: Promise<{ id: string }>;
+}) {
   const params = await props.params;
   const product = footwearProducts.find((p) => p.id.toString() === params.id);
 
@@ -51,6 +53,7 @@ export default async function ProductPage(props: { params: Promise<{ id: string 
                 alt={product.name}
                 fill
                 className="object-cover"
+                sizes="500"
               />
             </div>
 
@@ -79,7 +82,7 @@ export default async function ProductPage(props: { params: Promise<{ id: string 
               </div>
 
               <div className="mt-4 text-2xl font-bold">
-                ${product.price.toFixed(2)}
+                ₹{product.price.toFixed(2)}
               </div>
 
               <div className="mt-6">

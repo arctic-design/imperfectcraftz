@@ -13,6 +13,7 @@ export interface Product {
     isNew: boolean
     description: string
     features: string[]
+    productId: string
   }
   
   

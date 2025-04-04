@@ -20,6 +20,7 @@ export function ProductCard({ product }: ProductCardProps) {
           alt={product.name}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="500"
         />
         {product.isNew && (
           <div className="absolute left-2 top-2 rounded-full bg-black px-2 py-1 text-xs font-medium text-white">
@@ -56,11 +57,11 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="mt-2 flex items-center justify-between">
           <div className="flex items-center">
             <span className="text-sm font-medium text-gray-900 md:text-base">
-              ${product.price.toFixed(2)}
+              ₹{product.price.toFixed(2)}
             </span>
             {product.originalPrice > 0 && (
               <span className="ml-2 text-xs text-gray-500 line-through md:text-sm">
-                ${product.originalPrice.toFixed(2)}
+                ₹{product.originalPrice.toFixed(2)}
               </span>
             )}
           </div>
