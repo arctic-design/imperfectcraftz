@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, Search, ShoppingBag, User, X } from "lucide-react";
@@ -13,6 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b bg-white">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
+        <Image src="/sidebar.jpg" width={54} height={54} alt="Logo" />
         <Link href="/" className="flex items-center">
           <span className="text-xl font-bold">Imperfect Craftz</span>
         </Link>

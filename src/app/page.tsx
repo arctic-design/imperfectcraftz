@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 import { footwearProducts } from "@/lib/data";
 import { Header } from "@/components/header";
@@ -12,15 +12,17 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative">
-          <div className="relative h-[60vh] w-full overflow-hidden">
+          <div className="relative w-full overflow-hidden h-[35vh] sm:h-[65vh] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] 2xl:h-[80vh]">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/bg.jpg?height=800&width=1600"
               alt="Women's footwear collection"
               fill
               priority
               className="object-cover"
+              // width={1600}
+              // height={800}
             />
-            <div className="absolute inset-0 bg-black/40" />
+            {/* <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
               <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
                 Imperfect Craftz
@@ -34,7 +36,7 @@ export default function Home() {
               >
                 Shop Now
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
