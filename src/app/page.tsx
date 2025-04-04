@@ -45,12 +45,12 @@ export default function Home() {
               Crafted for Comfort & Style
             </h2>
             <p className="mt-4 text-gray-600">
-              Our footwear collection combines the latest fashion trends with
+              {`Our footwear collection combines the latest fashion trends with
               exceptional comfort. Each pair is meticulously crafted using
               premium materials to ensure durability and all-day comfort.
               Whether you're looking for casual everyday shoes, elegant heels
               for special occasions, or supportive athletic footwear, our
-              diverse range has something for every woman.
+              diverse range has something for every woman.`}
             </p>
           </div>
         </section>

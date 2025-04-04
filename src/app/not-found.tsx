@@ -8,7 +8,7 @@ export default function NotFound() {
       <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">404</h1>
       <h2 className="mt-4 text-xl font-semibold sm:text-2xl">Page Not Found</h2>
       <p className="mt-2 text-muted-foreground">
-        The page you are looking for doesn't exist or has been moved.
+        {`The page you are looking for doesn't exist or has been moved.`}
       </p>
       <button
         //   asChild

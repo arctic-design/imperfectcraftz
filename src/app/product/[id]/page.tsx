@@ -15,7 +15,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default async function ProductPage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const product = footwearProducts.find((p) => p.id.toString() === params.id);
 
   if (!product) {
