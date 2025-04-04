@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { contactInfo } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -14,6 +15,17 @@ export function Footer() {
             <p className="mt-4 text-sm text-gray-600">
               Discover the perfect blend of style and comfort with our premium
               footwear collection.
+            </p>
+            <p className="mt-4 text-sm text-gray-600">
+              For order-related queries, message us on{" "}
+              <a
+                href={`https://wa.me/${contactInfo.phone}`}
+                className="text-green-600 hover:text-green-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
             </p>
             <div className="mt-6 flex space-x-4">
               <Link href="/" className="text-gray-500 hover:text-gray-900">
@@ -157,7 +169,7 @@ export function Footer() {
 
         <div className="mt-12 border-t pt-8">
           <p className="text-center text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Elegance Footwear. All rights
+            &copy; {new Date().getFullYear()} Imperfect Craftz. All rights
             reserved.
           </p>
         </div>

@@ -350,4 +350,7 @@ export const footwearProducts: Product[] = [
   ];
   
   
+  export const contactInfo = {
+    phone: "917416136391"
+  }
 
